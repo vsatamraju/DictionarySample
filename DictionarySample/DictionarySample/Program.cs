@@ -8,6 +8,7 @@ namespace DictionarySample
     {
         static void Main(string[] args)
         {
+            //Commented for test
             Console.WriteLine("Please enter a string");
             string str = Console.ReadLine();
 
