@@ -12,7 +12,8 @@ namespace DictionarySample
             string str = Console.ReadLine();
 
             //Using LINQ
-
+            Console.WriteLine("Using LINQ");
+            Console.WriteLine("---------------");
             var counted = str.GroupBy(g => g).Select(s => new { s.Key, Count = s.Count() }).OrderBy(o => o.Key);
                  
 
@@ -27,9 +28,11 @@ namespace DictionarySample
                     Console.Write(val.Key);
                 }
             }
-
+            Console.WriteLine("");
+            Console.WriteLine("##############");
             //Using DICTIONARY
-
+            Console.WriteLine("Using Dictionary");
+            Console.WriteLine("-----------------");
             Dictionary<char, int> dict = new Dictionary<char, int>();
 
             for (int i = 0; i < str.Length; i++)
