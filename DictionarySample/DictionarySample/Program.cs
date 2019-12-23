@@ -8,7 +8,7 @@ namespace DictionarySample
     {
         static void Main(string[] args)
         {            
-            Console.WriteLine("Please enter a string");
+            Console.WriteLine("Please enter a string to check");
             string str = Console.ReadLine();
 
             //Using LINQ
