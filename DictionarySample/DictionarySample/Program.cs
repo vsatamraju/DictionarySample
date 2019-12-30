@@ -12,6 +12,7 @@ namespace DictionarySample
             string str = Console.ReadLine();
 
             //Using LINQ
+            Console.WriteLine("Linq Code is Simple Than Dictionary");
             Console.WriteLine("Using LINQ");
             Console.WriteLine("---------------");
             var counted = str.GroupBy(g => g).Select(s => new { s.Key, Count = s.Count() }).OrderBy(o => o.Key);
