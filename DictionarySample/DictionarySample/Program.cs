@@ -12,6 +12,7 @@ namespace DictionarySample
             string str = Console.ReadLine();
 
             //Using LINQ
+            Console.WriteLine("Linq Code is Simple Than Dictionary");
             Console.WriteLine("Using LINQ");
             Console.WriteLine("---------------");
             var counted = str.GroupBy(g => g).Select(s => new { s.Key, Count = s.Count() }).OrderBy(o => o.Key);
@@ -30,7 +31,7 @@ namespace DictionarySample
             }
             Console.WriteLine("");
             Console.WriteLine("##############");
-            //Using DICTIONARY
+            ////Using DICTIONARY
             Console.WriteLine("Using Dictionary");
             Console.WriteLine("-----------------");
             Dictionary<char, int> dict = new Dictionary<char, int>();
@@ -43,7 +44,7 @@ namespace DictionarySample
                     dict.Add(str[i], 1);
             }
 
-            foreach(KeyValuePair<char,int> pair in dict.OrderBy(e => e.Key))
+            foreach (KeyValuePair<char, int> pair in dict.OrderBy(e => e.Key))
             {
                 if (pair.Value > 1)
                 {
