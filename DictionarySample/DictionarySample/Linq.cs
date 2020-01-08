@@ -8,9 +8,8 @@ namespace DictionarySample
 {
     class Linq
     {
-        public void GetCountUsingLinq(string str)
-        {  
-            Console.WriteLine("Linq Code is Simple Than Dictionary");
+        public void GetCountUsingLinq(string str )
+        {            
             Console.WriteLine("Using LINQ");
             Console.WriteLine("---------------");
             var counted = str.GroupBy(g => g).Select(s => new { s.Key, Count = s.Count() }).OrderBy(o => o.Key);
